@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Truth or Dare</title>
+  <link rel="shortcut icon" type="image/jpg" href="Truth.png"/>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+  <script src="https://kit.fontawesome.com/4842c97040.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <a href="https://discord.com/api/oauth2/authorize?client_id=854022960632299521&permissions=2148006976&redirect_uri=https%3A%2F%2Falpha83.tech%2F&scope=bot" target="_blank">
+    <i id ="discord" class="fab fa-discord" style="font-size:35px;">
+    </i>
+  </a>
+
+  <button class="popup" onclick="myFunction()"><i class="fas fa-question" style="font-size:35px;"></i>
+    <span class="popuptext" id="myPopup">Thanks for playig This Game! <br>It's very easy you just have to enter your frineds name and "click on start the game"<br>then you can choose Truth or Dare and start qeusting and answering.<br>If you want to change the question just click on "change"<br>Don't forget to check out my <a id="website" href="https://alpha83.tech/" target="_blank">WEBSITE</a></span>
+  </button>
+
+  <div id="start">
+    <h1 id="game-tittle">Truth or Dare</h1>
+    <input id="player-names" type="text" value="Names" autocomplete="on" autocapitalize="on"><br><br><br><br>
+    <input id="submit-ls" type="submit" value="Start the game" onclick="splitnames()">
+  </div>
+  <div id="truthdare"  style="display:none;">
+    <h2 id="players"></h2><br><br>
+    <button id= "truth" onclick="truth()">Truth</button><br><br><br>
+    <button id = "dare" onclick="dare()">Dare</button><br><br><br>
+    <button id = "changepla" onclick="cheplayer()">change</button>
+  </div>
+
+  <div id = "truthls" style="display:none;">
+    <h3 id="t">Truth</h3>
+    <p style="font-size: 25px;">The Question is: </p>
+    <p id="questiontruth"></p>
+    <button id="change" onclick="chquet()">change</button>
+  </div>
+  <div id = "darels" style="display:none;">
+    <h4 id="d">Dare</h4>
+    <p style="font-size: 25px;">The Question is: </p>
+    <p id="questiondare"></p>
+    <button id="change" onclick="chqued()">change</button>
+  </div> 
+</body>
+</html>
